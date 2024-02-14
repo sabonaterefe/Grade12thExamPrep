@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
-}
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .quiz-page-container {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .quiz-card {
+    padding: 1.5rem;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .quiz-title {
+    font-size: 2rem;
+  }
+
+  .quiz-description {
+    font-size: 1.1rem;
+  }
+
+  .question-text {
+    font-size: 1.25rem;
+  }
+
+  .option-item {
+    font-size: 1rem;
+    padding: 0.5rem 1rem !important;
+  }
+
+  .submit-button {
+    font-size: 1.1rem !important;
+    padding: 0.5rem 1.25rem !important;
+  }
+
+  .result-snackbar,
+  .result-alert {
+    font-size: 1rem !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .quiz-page-container {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .quiz-card {
+    padding: 1.75rem;
+  }
+
+  .quiz-title {
+    font-size: 2.25rem;
+  }
+
+  .quiz-description {
+    font-size: 1.15rem;
+  }
+
+  .question-text {
+    font-size: 1.35rem;
+  }
+
+  .option-item {
+    font-size: 1.05rem;
+    padding: 0.6rem 1.1rem !important;
+  }
+
+  .submit-button {
+    font-size: 1.15rem !important;
+    padding: 0.6rem 1.4rem !important;
+  }
+
+  .result-snackbar,
+  .result-alert {
+    font-size: 1.05rem !important;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* Desktop Styles */
+@media (min-width: 1200px) {
+  body{
+    background-color:antiquewhite
+  }
+  .quiz-page-container {
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  .quiz-card {
+    padding: 2rem;
+  }
+
+  .quiz-title {
+    font-size: 2.5rem;
+  }
+
+  .quiz-description {
+    font-size: 1.25rem;
+  }
+
+  .question-text {
+    font-size: 1.5rem;
+  }
+
+  .option-item {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem !important;
+  }
+
+  .submit-button {
+    font-size: 1.2rem !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+
+  .result-snackbar,
+  .result-alert {
+    font-size: 1.1rem !important;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Other Styles */
+.quiz-page-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.quiz-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.quiz-title {
+  margin-bottom: 1rem !important;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.quiz-description {
+  margin-bottom: 2rem !important;
+  color: #495057;
+}
+
+.quiz-question {
+  margin-top: 2rem;
+}
+
+.question-text {
+  margin-bottom: 1rem !important;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.question-options {
+  padding: 0 !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.option-item {
+  background-color: #e9ecef;
+  color: #495057;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.option-item:hover {
+  background-color: #dee2e6;
+}
+
+.correct-option {
+  background-color: #d1e9c9 !important;
+  color: #2e7d32 !important;
+}
+
+.incorrect-option {
+  background-color: #f8d7da !important;
+  color: #c62828 !important;
+}
+
+.submit-button {
+  background-color: #007bff !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  transition: background-color 0.3s !important;
+}
+
+.submit-button:hover {
+  background-color: #0056b3 !important;
+}
+
+.result-snackbar {
+  background-color: #2e7d32 !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+}
+
+.result-alert {
+  background-color: #c62828 !important;
+  color: #fff !important;
+  border-radius: 6px !important;
 }

@@ -1,0 +1,105 @@
+/* Mobile Styles */
+@media (max-width: 599px) {
+    .study-material-container {
+      padding: 1.5rem;
+    }
+  
+    .study-material-paper {
+      padding: 2rem;
+      border-radius: 16px;
+    }
+  
+    .study-material-title {
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+    }
+  
+    .study-material-form {
+      gap: 1.2rem;
+    }
+  
+    .study-material-input {
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+  
+    .study-material-button {
+      border-radius: 10px !important;
+      padding: 0.8rem 0 !important;
+      font-size: 1.1rem !important;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 600px) and (max-width: 959px) {
+    .study-material-container {
+      padding: 2rem;
+    }
+  
+    .study-material-paper {
+      padding: 2.5rem;
+      border-radius: 18px;
+    }
+  
+    .study-material-title {
+      margin-bottom: 1.8rem;
+      font-size: 1.8rem;
+    }
+  
+    .study-material-form {
+      gap: 1.4rem;
+    }
+  
+    .study-material-input {
+      border-radius: 11px;
+      font-size: 1.05rem;
+    }
+  
+    .study-material-button {
+      border-radius: 11px !important;
+      padding: 0.85rem 0 !important;
+      font-size: 1.15rem !important;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 960px) {
+    body{
+      background-color: aqua;
+    }
+    .study-material-container {
+      padding: 2.5rem;
+    }
+  
+    .study-material-paper {
+      padding: 3.5rem;
+      max-width: 700px;
+      border-radius: 22px;
+    }
+  
+    .study-material-title {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+  
+    .study-material-form {
+      gap: 1.6rem;
+    }
+  
+    .study-material-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.6rem;
+    }
+  
+    .study-material-input {
+      border-radius: 12px;
+      font-size: 1.1rem;
+    }
+  
+    .study-material-button {
+      border-radius: 12px !important;
+      padding: 0.9rem 0 !important;
+      font-size: 1.2rem !important;
+    }
+  }
