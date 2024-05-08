@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Container, Grid, Button, Typography, List, ListItem, ListItemText } from '@mui/material';
-import './App.css'; 
+import './Styling/AccessMaterial.css'
 
 const theme = createTheme({
   palette: {
@@ -82,7 +82,7 @@ const subjects = [
 ];
 
 
-function App() {
+function MaterialAccess() {
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedChapter, setSelectedChapter] = useState(null);
   const [viewingChapters, setViewingChapters] = useState(false);
@@ -210,4 +210,4 @@ function App() {
   );
 }
 
-export default App;
+export default MaterialAccess;

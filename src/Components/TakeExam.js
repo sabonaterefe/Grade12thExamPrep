@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Container, Grid, Typography, List, ListItem, ListItemText, MenuItem, Select, Button } from '@mui/material';
-import './App.css'; 
 
 const theme = createTheme({
   palette: {
@@ -57,7 +56,7 @@ const subjects = [
   },
 ];
 
-function App() {
+function TakeExam() {
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [selectedYear, setSelectedYear] = useState(null);
   const [viewingYears, setViewingYears] = useState(false);
@@ -129,4 +128,4 @@ function App() {
   );
 }
 
-export default App;
+export default TakeExam;

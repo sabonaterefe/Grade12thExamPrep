@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Container, Button, Grid, Paper, CircularProgress, Typography } from '@mui/material';
-import './App.css';
+import './Styling/Quiz.css'
 import questions from './questions.json';
 
 const theme = createTheme({

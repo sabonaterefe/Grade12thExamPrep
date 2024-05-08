@@ -56,7 +56,7 @@ const subjects = [
   },
 ];
 
-function App() {
+function TrackProgress() {
   const [selectedSubject, setSelectedSubject] = useState(null);
   const [viewingYears, setViewingYears] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -131,4 +131,4 @@ function App() {
   );
 }
 
-export default App;
+export default TrackProgress;

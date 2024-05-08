@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Container, TextField, Button, Typography, Grid, Paper, Select, MenuItem, InputLabel, FormControl } from '@mui/material';
-import './App.css';
+import './Styling/Student.css'
 
 const theme = createTheme({
   palette: {
